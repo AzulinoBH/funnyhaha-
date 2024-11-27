@@ -40,8 +40,8 @@ int main()
     for (int i : colors) {
       SetColor(i);
       for (int k = 0; k < 3; k++) {
-        for (int i = 0; i < 100; i++) {
-          cout << "\u25A0";
+        for (int i = 0; i < 120; i++) {
+          cout << (unsigned char)177;
         }
         cout << endl;
       }
