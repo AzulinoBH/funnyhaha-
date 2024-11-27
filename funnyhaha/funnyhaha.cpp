@@ -37,6 +37,7 @@ int main()
       // brighter colors!!
       break;
     case 3: // egg
+      SetColor(97); // bright white
       for (int i = 0; i < 50; i++) {
         for (int j = 0; j < i; j++) {
           cout << endl;
@@ -48,12 +49,14 @@ int main()
         cout << endl;
       }
       cout << "\\ /" << endl;
+      this_thread::sleep_for(100ms);
       system("cls");
       for (int j = 0; j < 50; j++) {
         cout << endl;
       }
-      this_thread::sleep_for(500ms);
+      SetColor(93); // bright yellow
       cout << "____" << endl;
+      ResetColor();
       return 0;
     
     default:
